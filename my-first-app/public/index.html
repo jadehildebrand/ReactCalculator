@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="../src/index.css"/>
+    <link rel="stylesheet" href="../src/App.css"/>
+    
+    <script src="../src/App.js"/>
+
+    <title>Calculator App</title>
+  </head>
+  <body>
+        <!-- Calculator wrapper -->
+    <div class="calculator">
+      <!-- calculator screen. disabled attribute prevents users from typing-->
+      <input type="text" class="calculator-screen" value="" disabled />
+
+      <!-- wrapper for calculator keys -->
+      <div class="calculator-keys">
+        <!-- buttons for operators + - * / -->
+        <button type="button" class="operator" value="+">+</button>
+        <button type="button" class="operator" value="-">-</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="operator" value="/">&divide;</button>
+
+        <!-- Number buttons top most row left to right-->
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+
+        <!-- Number buttons middle row left to right -->
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+
+        <!-- Number buttons lower row left to right -->
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+
+        <!-- rest of the numbers and utilities -->
+        <button type="button" value="0">0</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type="button" class="all-clear" value="all-clear">AC</button>
+        <button type="button" class="operator" id="equal-sign" value="=">
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
